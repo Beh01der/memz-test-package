@@ -7,6 +7,11 @@ setup(
     install_requires=[
         # Add your package dependencies here
     ],
+    entry_points={
+        "console_scripts": [
+            "memz-test-package=memz_test_package.__main__:main",
+        ],
+    },
     author="Andrey Chausenko",
     author_email="andrey@memz.au",
     description="A short description of your package",
